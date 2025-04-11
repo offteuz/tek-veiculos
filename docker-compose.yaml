@@ -1,7 +1,7 @@
 services:
   # Banco de dados (PostgreSQL)
   database:
-    container_name: vagacerta
+    container_name: tekveiculos
     image: postgres
     ports:
       - '${DB_PORT}:${DB_PORT}'
@@ -14,7 +14,7 @@ services:
 
   # pgAdmin para gerenciar o PostgreSQL
   pgadmin:
-    container_name: pgvagacerta
+    container_name: pgtekveiculos
     image: dpage/pgadmin4
     environment:
       PGADMIN_DEFAULT_EMAIL: ${DB_EMAIL}
