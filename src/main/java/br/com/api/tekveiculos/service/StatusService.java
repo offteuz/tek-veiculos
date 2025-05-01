@@ -2,6 +2,7 @@ package br.com.api.tekveiculos.service;
 
 import br.com.api.tekveiculos.dto.request.StatusRequestDTO;
 import br.com.api.tekveiculos.dto.response.StatusResponseDTO;
+import br.com.api.tekveiculos.exception.StatusNotFoundException;
 import br.com.api.tekveiculos.mapper.StatusMapper;
 import br.com.api.tekveiculos.model.Status;
 import br.com.api.tekveiculos.repository.StatusRepository;
@@ -36,14 +37,14 @@ public class StatusService {
 
     public StatusResponseDTO findById(Long id) {
         Status status = repository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Status não encontrado. Verifique!"));
+                .orElseThrow(() -> new StatusNotFoundException());
 
         return new StatusResponseDTO(status);
     }
 
     public StatusResponseDTO update(Long id, StatusRequestDTO dto) {
         Status status = repository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Status não encontrado. Verifique!"));
+                .orElseThrow(() -> new StatusNotFoundException());
 
         mapper.update(dto, status);
 
@@ -52,7 +53,7 @@ public class StatusService {
 
     public void delete(Long id) {
         Status status = repository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Status não encontrado. Verifique!"));
+                .orElseThrow(() -> new StatusNotFoundException());
 
         repository.delete(status);
     }
