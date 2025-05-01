@@ -1,7 +1,10 @@
 package br.com.api.tekveiculos.dto.response;
 
 import br.com.api.tekveiculos.model.Audit;
+import br.com.api.tekveiculos.model.Client;
 import br.com.api.tekveiculos.model.Status;
+
+import java.util.List;
 
 public record StatusResponseDTO(
 
@@ -9,14 +12,17 @@ public record StatusResponseDTO(
 
         String description,
 
-        Audit audit
+        Audit audit,
+
+        List<Client> clientList
 ) {
 
     public StatusResponseDTO(Status status) {
         this(
                 status.getId(),
                 status.getDescription(),
-                status.getAudit()
+                status.getAudit(),
+                status.getClientList()
         );
     }
 }
