@@ -14,11 +14,13 @@ public interface StatusMapper {
 
     @Mapping(target = "id", ignore = true)
     @Mapping(target = "audit", ignore = true)
+    @Mapping(target = "clientList", ignore = true)
     Status toDTO(StatusRequestDTO dto);
 
     StatusResponseDTO toModel(Status status);
 
     @Mapping(target = "id", ignore = true)
     @Mapping(target = "audit", ignore = true)
+    @Mapping(target = "clientList", ignore = true)
     void update(StatusRequestDTO dto, @MappingTarget Status status);
 }
