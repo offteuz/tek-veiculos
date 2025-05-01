@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import jakarta.validation.Valid;
 import lombok.*;
 
+import java.util.List;
+
 @Getter
 @Setter
 @NoArgsConstructor
@@ -23,4 +25,7 @@ public class Status {
     @Valid
     @Embedded
     private Audit audit;
+
+    @OneToMany(mappedBy = "status")
+    private List<Client> clientList;
 }
