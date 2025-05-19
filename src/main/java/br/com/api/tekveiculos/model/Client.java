@@ -24,6 +24,9 @@ public class Client {
     @Column(name = "fantasy_name")
     private String fantasyName;
 
+    @Column(unique = true)
+    private String cnpj;
+
     private String city;
 
     private String uf;

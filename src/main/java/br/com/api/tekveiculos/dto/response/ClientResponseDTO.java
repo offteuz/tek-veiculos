@@ -11,6 +11,8 @@ public record ClientResponseDTO(
 
         String fantasyName,
 
+        String cnpj,
+
         String city,
 
         String uf,
@@ -25,6 +27,7 @@ public record ClientResponseDTO(
                 client.getId(),
                 client.getSocialReason(),
                 client.getFantasyName(),
+                client.getCnpj(),
                 client.getCity(),
                 client.getUf(),
                 new StatusClientResponseDTO(client.getStatus()),
