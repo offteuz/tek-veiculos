@@ -28,4 +28,7 @@ public class Status {
 
     @OneToMany(mappedBy = "status")
     private List<Client> clientList;
+
+    @OneToMany(mappedBy = "status")
+    private List<Vehicle> vehicleList;
 }
