@@ -13,48 +13,48 @@ import java.util.List;
 @Service
 public class StatusService {
 
-    private final StatusRepository repository;
+    private final StatusRepository statusRepository;
 
-    private final StatusMapper mapper;
+    private final StatusMapper statusMapper;
 
-    private StatusService(StatusRepository repository, StatusMapper mapper) {
-        this.repository = repository;
-        this.mapper = mapper;
+    private StatusService(StatusRepository statusRepository, StatusMapper statusMapper) {
+        this.statusRepository = statusRepository;
+        this.statusMapper = statusMapper;
     }
 
     public StatusResponseDTO create(StatusRequestDTO dto) {
-        Status status = mapper.toDTO(dto);
+        Status status = statusMapper.toDTO(dto);
 
-        return new StatusResponseDTO(repository.save(status));
+        return new StatusResponseDTO(statusRepository.save(status));
     }
 
     public List<StatusResponseDTO> findAll() {
-        return repository.findAll()
+        return statusRepository.findAll()
                 .stream()
                 .map(StatusResponseDTO::new)
                 .toList();
     }
 
-    public StatusResponseDTO findById(Long id) {
-        Status status = repository.findById(id)
+    public StatusResponseDTO findById(Long idStatus) {
+        Status status = statusRepository.findById(idStatus)
                 .orElseThrow(() -> new StatusNotFoundException());
 
         return new StatusResponseDTO(status);
     }
 
-    public StatusResponseDTO update(Long id, StatusRequestDTO dto) {
-        Status status = repository.findById(id)
+    public StatusResponseDTO update(Long idStatus, StatusRequestDTO dto) {
+        Status status = statusRepository.findById(idStatus)
                 .orElseThrow(() -> new StatusNotFoundException());
 
-        mapper.update(dto, status);
+        statusMapper.update(dto, status);
 
-        return new StatusResponseDTO(repository.save(status));
+        return new StatusResponseDTO(statusRepository.save(status));
     }
 
-    public void delete(Long id) {
-        Status status = repository.findById(id)
+    public void delete(Long idStatus) {
+        Status status = statusRepository.findById(idStatus)
                 .orElseThrow(() -> new StatusNotFoundException());
 
-        repository.delete(status);
+        statusRepository.delete(status);
     }
 }

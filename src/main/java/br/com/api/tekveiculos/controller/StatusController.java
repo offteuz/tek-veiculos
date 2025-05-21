@@ -13,39 +13,39 @@ import java.util.List;
 @RequestMapping("/api")
 public class StatusController {
 
-    StatusService service;
+    private final StatusService statusService;
 
     private StatusController(StatusService service) {
-        this.service = service;
+        this.statusService = service;
     }
 
     @PostMapping("/create/status")
     @ResponseStatus(HttpStatus.CREATED)
     private StatusResponseDTO create(@Valid @RequestBody StatusRequestDTO dto) {
-        return service.create(dto);
+        return statusService.create(dto);
     }
 
     @GetMapping("/find-all/status")
     @ResponseStatus(HttpStatus.OK)
     private List<StatusResponseDTO> findAll() {
-        return service.findAll();
+        return statusService.findAll();
     }
 
     @GetMapping("/find-by-id/status/{idStatus}")
     @ResponseStatus(HttpStatus.OK)
     private StatusResponseDTO findById(@PathVariable Long idStatus) {
-        return service.findById(idStatus);
+        return statusService.findById(idStatus);
     }
 
     @PutMapping("/update/status/{idStatus}")
     @ResponseStatus(HttpStatus.OK)
     private StatusResponseDTO update(@PathVariable Long idStatus, @Valid @RequestBody StatusRequestDTO dto) {
-        return service.update(idStatus, dto);
+        return statusService.update(idStatus, dto);
     }
 
     @DeleteMapping("/delete/status/{idStatus}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     private void delete(@PathVariable Long idStatus) {
-        service.delete(idStatus);
+        statusService.delete(idStatus);
     }
 }
