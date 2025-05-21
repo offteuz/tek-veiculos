@@ -13,39 +13,39 @@ import java.util.List;
 @RequestMapping("/api")
 public class ClientController {
 
-    private final ClientService service;
+    private final ClientService clientService;
 
-    public ClientController(ClientService service) {
-        this.service = service;
+    public ClientController(ClientService clientService) {
+        this.clientService = clientService;
     }
 
     @PostMapping("/create/client")
     @ResponseStatus(HttpStatus.CREATED)
     private ClientResponseDTO create(@Valid @RequestBody ClientRequestDTO dto) {
-        return service.create(dto);
+        return clientService.create(dto);
     }
 
     @GetMapping("/find-all/client")
     @ResponseStatus(HttpStatus.OK)
     private List<ClientResponseDTO> findAll() {
-        return service.findAll();
+        return clientService.findAll();
     }
 
     @GetMapping("/find-by-id/client/{idClient}")
     @ResponseStatus(HttpStatus.OK)
     private ClientResponseDTO findById(@PathVariable Long idClient) {
-        return service.findById(idClient);
+        return clientService.findById(idClient);
     }
 
     @PutMapping("/update/client/{idClient}")
     @ResponseStatus(HttpStatus.OK)
     private ClientResponseDTO update(@PathVariable Long idClient, @Valid @RequestBody ClientRequestDTO dto) {
-        return service.update(idClient, dto);
+        return clientService.update(idClient, dto);
     }
 
     @DeleteMapping("/delete/client/{idClient}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     private void delete(@PathVariable Long idClient) {
-        service.delete(idClient);
+        clientService.delete(idClient);
     }
 }

@@ -15,16 +15,16 @@ public class ClientService {
 
     private final ClientRepository clientRepository;
 
-    private final ClientMapper mapper;
+    private final ClientMapper clientMapper;
 
 
-    public ClientService(ClientRepository clientRepository, ClientMapper mapper) {
+    public ClientService(ClientRepository clientRepository, ClientMapper clientMapper) {
         this.clientRepository = clientRepository;
-        this.mapper = mapper;
+        this.clientMapper = clientMapper;
     }
 
     public ClientResponseDTO create(ClientRequestDTO dto) {
-        Client client = mapper.toDTO(dto);
+        Client client = clientMapper.toDTO(dto);
 
         return new ClientResponseDTO(clientRepository.save(client));
     }
@@ -47,7 +47,7 @@ public class ClientService {
         Client client = clientRepository.findById(idClient)
                 .orElseThrow(ClientNotFoundException::new);
 
-        mapper.update(dto, client);
+        clientMapper.update(dto, client);
 
         return new ClientResponseDTO(clientRepository.save(client));
     }
