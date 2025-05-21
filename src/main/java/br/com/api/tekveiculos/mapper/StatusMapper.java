@@ -15,6 +15,7 @@ public interface StatusMapper {
     @Mapping(target = "id", ignore = true)
     @Mapping(target = "audit", ignore = true)
     @Mapping(target = "clientList", ignore = true)
+    @Mapping(target = "vehicleList", ignore = true)
     Status toDTO(StatusRequestDTO dto);
 
     StatusResponseDTO toModel(Status status);
@@ -22,5 +23,6 @@ public interface StatusMapper {
     @Mapping(target = "id", ignore = true)
     @Mapping(target = "audit", ignore = true)
     @Mapping(target = "clientList", ignore = true)
+    @Mapping(target = "vehicleList", ignore = true)
     void update(StatusRequestDTO dto, @MappingTarget Status status);
 }
