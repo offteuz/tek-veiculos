@@ -17,7 +17,7 @@ public record ClientResponseDTO(
 
         String uf,
 
-        StatusClientResponseDTO status,
+        StatusSummaryResponseDTO status,
 
         Audit audit
 ) {
@@ -30,7 +30,7 @@ public record ClientResponseDTO(
                 client.getCnpj(),
                 client.getCity(),
                 client.getUf(),
-                new StatusClientResponseDTO(client.getStatus()),
+                new StatusSummaryResponseDTO(client.getStatus()),
                 client.getAudit()
         );
     }
