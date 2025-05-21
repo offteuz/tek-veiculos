@@ -8,7 +8,9 @@ import org.mapstruct.Mapping;
 import org.mapstruct.MappingTarget;
 import org.mapstruct.ReportingPolicy;
 
-@Mapper(componentModel = "spring", uses = {StatusMapperHelper.class}, unmappedTargetPolicy = ReportingPolicy.ERROR)
+@Mapper(componentModel = "spring",
+        uses = {StatusMapperHelper.class},
+        unmappedTargetPolicy = ReportingPolicy.ERROR)
 public interface ClientMapper {
 
     @Mapping(target = "id", ignore = true)
