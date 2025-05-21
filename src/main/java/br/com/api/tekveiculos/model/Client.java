@@ -2,6 +2,7 @@ package br.com.api.tekveiculos.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
+import jakarta.validation.Valid;
 import lombok.*;
 
 @Getter
@@ -18,7 +19,7 @@ public class Client {
     @GeneratedValue(generator = "seq_client", strategy = GenerationType.SEQUENCE)
     private Long id;
 
-    @Column(name = "social_reason")
+    @Column(name = "social_reason", unique = true)
     private String socialReason;
 
     @Column(name = "fantasy_name")
@@ -37,5 +38,6 @@ public class Client {
     private Status status;
 
     @Embedded
+    @Valid
     private Audit audit;
 }
