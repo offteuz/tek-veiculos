@@ -1,7 +1,19 @@
 services:
+  # Back-end da aplicação
+  tekveiculos:
+    build: .
+    ports:
+      - '8081:8080'
+    depends_on:
+      - database
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://database:${DB_PORT}/database
+      SPRING_DATASOURCE_USERNAME: ${DB_USERNAME}
+      SPRING_DATASOURCE_PASSWORD: ${DB_PASSWORD}
+
   # Banco de dados (PostgreSQL)
   database:
-    container_name: tekveiculos
+    container_name: databasetekveiculos
     image: postgres
     ports:
       - '${DB_PORT}:${DB_PORT}'
@@ -20,7 +32,7 @@ services:
       PGADMIN_DEFAULT_EMAIL: ${DB_EMAIL}
       PGADMIN_DEFAULT_PASSWORD: ${DB_PASSWORD}
     ports:
-      - '8081:80'
+      - '8082:80'
     depends_on:
       - database
 
