@@ -15,6 +15,6 @@ public record ClientRequestDTO(
 
         String uf,
 
-        Long statusId
+        Long idStatus
 ) {
 }
