@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BD706169-D06C-410B-9E28-4AF1A5B8C939" containerWithKeyObject="584B636F-F9ED-9465-9F09-08165104E343" localFKIndex="C3551008-967C-67E9-A56D-E5BEDF598DD7" name="ABASTECIMENTO_VISITA_CLIENTE_FK">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 00:51:11 UTC</createdTime>
+<generatorID>858F6584-5156-05DF-5386-928C03F2BF2E</generatorID>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<referredTableLongName>VISITA_CLIENTE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9196970A-F29E-35E7-10AC-5FC5EE3DC706</referredTableID>
+<keyObject>B2A28526-A134-A378-ED6B-5585E18A6F90</keyObject>
+<referredKeyID>B2A28526-A134-A378-ED6B-5585E18A6F90</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id_visita_cliente</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

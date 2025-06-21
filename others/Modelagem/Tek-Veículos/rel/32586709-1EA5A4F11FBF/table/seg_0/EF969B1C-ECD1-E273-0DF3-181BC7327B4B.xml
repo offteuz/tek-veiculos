@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EF969B1C-ECD1-E273-0DF3-181BC7327B4B" name="CLIENTE">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 00:51:11 UTC</createdTime>
+<generatorID>6D194274-696D-4C78-E4F3-792245612BC1</generatorID>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_cliente" id="C0C2E1C2-46FB-DF2D-9296-E60963B991F8">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 00:51:11 UTC</createdTime>
+<generatorID>310A87C0-0CEA-A852-CE82-6DAB575CC0E4</generatorID>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="razao_social" id="B8CDE533-7651-BD78-25D3-BE06E439086A">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 00:51:11 UTC</createdTime>
+<generatorID>849F34E5-E063-6AA4-C6F0-BB85FA0240BA</generatorID>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nome_fantasia" id="EFE1D394-0646-7F91-9F89-486F31E27411">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 00:51:11 UTC</createdTime>
+<generatorID>0E7F0BC5-F34E-B939-8890-B77AD433B7B3</generatorID>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cidade" id="1ED9E0EF-FCE2-ED85-737F-F8EF1D0179D9">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 00:51:11 UTC</createdTime>
+<generatorID>3A904932-3796-6D57-EF71-9690C6C30BEA</generatorID>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UF" id="D86D4492-A687-D647-7511-7E6DA3E074F3">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 00:51:11 UTC</createdTime>
+<generatorID>15B6A964-DD83-4DCD-C9B4-EEAADA2CD543</generatorID>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_status" id="98FF2B09-5F41-ED87-CD01-295B1C4CBC1D">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 00:51:11 UTC</createdTime>
+<generatorID>C19D01FB-BF62-8C5A-01DC-DCAF86D3E1F3</generatorID>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1444D062-61B4-56B4-D788-E942D42D5224" referredColumn="B3E5E64D-A454-4854-20F3-6C754616356E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="40317E0C-01E0-1EAA-15FA-4B296A5A00E9" name="CLIENTE_PK">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 00:51:11 UTC</createdTime>
+<generatorID>299748AB-8FF4-1DB4-18C0-168EF9711729</generatorID>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C0C2E1C2-46FB-DF2D-9296-E60963B991F8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="95DA3E37-06EE-5682-FDFF-2496ECC6481B" name="CLIENTE_STATUS_FK">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 00:51:11 UTC</createdTime>
+<generatorID>09A46ADE-475D-AEC0-D41D-EFC03DB40147</generatorID>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="98FF2B09-5F41-ED87-CD01-295B1C4CBC1D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

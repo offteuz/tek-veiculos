@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CD281502-1506-9C69-2885-6329FCC4B8F9" name="STATUS">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 00:51:11 UTC</createdTime>
+<generatorID>8CED7E2E-A8CB-D3E3-A1B8-45517115D5E6</generatorID>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_status" id="B3E5E64D-A454-4854-20F3-6C754616356E">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 00:51:11 UTC</createdTime>
+<generatorID>8AB69008-C6F7-4619-A2C1-3AEA0EBAD778</generatorID>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descricao" id="A076E9CE-8C78-9256-5D02-F3BEAFB96C6F">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 00:51:11 UTC</createdTime>
+<generatorID>DB26332C-E40C-BE2D-50E1-584F9789341E</generatorID>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BF2E0619-AACD-3890-B9A8-AED557719C35" name="STATUS_PK">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 00:51:11 UTC</createdTime>
+<generatorID>C102441A-F704-B96A-D83B-179777031F37</generatorID>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B3E5E64D-A454-4854-20F3-6C754616356E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

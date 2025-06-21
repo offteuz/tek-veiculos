@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A3C5911E-1FCD-693E-4C3D-71A71A2B9AC1" name="USUARIO">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 00:51:11 UTC</createdTime>
+<generatorID>38AF3A57-A367-A0E9-3E7E-891C73D1EFD9</generatorID>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_usuario" id="69606A43-ED0A-91B5-A84B-4B2EAD3476B1">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 00:51:11 UTC</createdTime>
+<generatorID>6EFD3FA9-42C1-0FFE-1DD0-28D7F3E654BD</generatorID>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_usuario" id="DF512C68-2619-EF96-C403-5D5C0A4B349A">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 00:51:11 UTC</createdTime>
+<generatorID>46566C1F-D05F-1365-ED87-265FB3FD4912</generatorID>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="56E58A1E-1399-1501-6756-0AFBF9C92978">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 00:51:11 UTC</createdTime>
+<generatorID>A0A8014A-51E2-F758-D902-06DB295A4EB5</generatorID>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nome" id="B19D041D-6999-7EA1-6466-5FC12751FC30">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 00:51:11 UTC</createdTime>
+<generatorID>BAEB611A-96FC-681A-6D75-087C8CC76044</generatorID>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="senha" id="A3B9908F-F240-D03E-3687-9B40A3792D98">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 00:51:11 UTC</createdTime>
+<generatorID>9EB37499-54CF-AF04-0F66-9EED6D1C0661</generatorID>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ativo" id="02BF972E-D26D-BD94-9D2A-643886C092DF">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 00:51:11 UTC</createdTime>
+<generatorID>406060F5-D88B-E02E-6E4A-341043CE1A6E</generatorID>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7D386F62-62A3-315F-EEC0-7278F6ABF2D2" name="USUARIO_PK">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 00:51:11 UTC</createdTime>
+<generatorID>A4CB4F3E-6C3C-8A9C-8E5D-17811389DD61</generatorID>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="69606A43-ED0A-91B5-A84B-4B2EAD3476B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

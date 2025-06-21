@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8CED7E2E-A8CB-D3E3-A1B8-45517115D5E6" name="STATUS">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-09 14:17:56 UTC</createdTime>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<engineerTo>
+<item key="32586709-FC96-4896-D5A1-1EA5A4F11FBF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_status" id="8AB69008-C6F7-4619-A2C1-3AEA0EBAD778">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-09 14:17:56 UTC</createdTime>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<engineerTo>
+<item key="32586709-FC96-4896-D5A1-1EA5A4F11FBF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descricao" id="DB26332C-E40C-BE2D-50E1-584F9789341E">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-09 14:17:56 UTC</createdTime>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<engineerTo>
+<item key="32586709-FC96-4896-D5A1-1EA5A4F11FBF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C102441A-F704-B96A-D83B-179777031F37" name="AGENDAMENTO PK">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-09 14:17:56 UTC</createdTime>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="32586709-FC96-4896-D5A1-1EA5A4F11FBF" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8AB69008-C6F7-4619-A2C1-3AEA0EBAD778</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

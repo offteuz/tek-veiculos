@@ -1,0 +1,199 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9196970A-F29E-35E7-10AC-5FC5EE3DC706" name="VISITA_CLIENTE">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 00:51:11 UTC</createdTime>
+<generatorID>3F84CA75-9017-9C20-CA78-DFCCA745E48B</generatorID>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_visita_cliente" id="A50A8EA6-ABF5-2F8C-C473-3FE8077F8758">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 00:51:11 UTC</createdTime>
+<generatorID>72476860-5751-CFBF-66ED-76F30CF1B56D</generatorID>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_hora_previsao_saida" id="1E10BA5C-8D04-C34E-18A4-97A682374E0A">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 00:51:11 UTC</createdTime>
+<generatorID>CBA49923-2C2E-6DEC-A833-57EABF2E3BE7</generatorID>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>91229484-D19C-D458-8647-333C7FFE7B60</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_hora_saida" id="34D6A20A-68EB-2FA4-B525-DF2DBE355284">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 00:51:11 UTC</createdTime>
+<generatorID>200DB068-9AA4-667B-A6FA-F716A1C3AA71</generatorID>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>91229484-D19C-D458-8647-333C7FFE7B60</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="km_saida_veiculo" id="C323155C-E965-B98C-29D8-21F144B711C3">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 00:51:11 UTC</createdTime>
+<generatorID>03DDEB8E-7A3B-A403-CC73-FE71F55E5EB9</generatorID>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_hora_previsao_retorno" id="8DA03A57-743B-445A-74C6-EF1F996ED719">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 00:51:11 UTC</createdTime>
+<generatorID>AC2DE795-8D5E-90F7-7819-EEBB07F9CF90</generatorID>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>91229484-D19C-D458-8647-333C7FFE7B60</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_hora_retorno" id="D962273C-7E0D-054D-F3A7-B09432FC3C19">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 00:51:11 UTC</createdTime>
+<generatorID>391C6EFC-6DEA-820E-FB66-75E793FC8B52</generatorID>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>91229484-D19C-D458-8647-333C7FFE7B60</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="km_retorno_veiculo" id="C694F537-9C8E-4C65-A602-B32E365F1E9A">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 00:51:11 UTC</createdTime>
+<generatorID>50AC2F4E-C6E2-0A17-6EA9-C4BE81797AA3</generatorID>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="observacao" id="27ED58ED-E304-444D-1CCE-F4FADB7ADE75">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 00:51:11 UTC</createdTime>
+<generatorID>E049FD42-65F2-A02F-54EC-2879CAF5FC26</generatorID>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_veiculo" id="6A5FE114-95B0-ACD0-7AB0-BA5620CC6C8F">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 00:51:11 UTC</createdTime>
+<generatorID>BDAB7F8A-8475-094F-E1D2-3D544FE53A62</generatorID>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="89BA912A-CABC-1F3E-5B74-DA26C08D6152" referredColumn="5A774710-C35D-1904-90AF-3A9313269E4E"/>
+</associations>
+</Column>
+<Column name="id_cliente" id="B583CD8F-303A-FC39-48ED-5E8C11DF09DD">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 00:51:11 UTC</createdTime>
+<generatorID>A704B473-299F-5E08-7051-A54DC3865BEA</generatorID>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="33E11E84-D4BD-DFF8-DDDF-69DFCA12FEAD" referredColumn="C0C2E1C2-46FB-DF2D-9296-E60963B991F8"/>
+</associations>
+</Column>
+<Column name="id_status" id="FF8E1805-42E4-2482-464C-E1C13BCA1A8C">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 00:51:11 UTC</createdTime>
+<generatorID>09FA8F4C-90F0-1AED-6683-654525BF9451</generatorID>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7E998069-0FDD-929E-C983-D570E5663B12" referredColumn="B3E5E64D-A454-4854-20F3-6C754616356E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B2A28526-A134-A378-ED6B-5585E18A6F90" name="VISITA_CLIENTE_PK">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 00:51:11 UTC</createdTime>
+<generatorID>14C614D4-4568-FBAF-42B1-5F7693B28FEE</generatorID>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A50A8EA6-ABF5-2F8C-C473-3FE8077F8758"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1D17A263-3EF7-E667-0220-7CC6FC39621D" name="VISITA_CLIENTE_CLIENTE_FK">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 00:51:11 UTC</createdTime>
+<generatorID>2A227158-C778-E49F-A3CA-0BE6E35BBE75</generatorID>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B583CD8F-303A-FC39-48ED-5E8C11DF09DD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6B18F7BA-6BDF-4784-0A86-0B59EE5A6C44" name="VISITA_CLIENTE_STATUS_FK">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 00:51:11 UTC</createdTime>
+<generatorID>4C477329-C435-D93E-A2C6-756957E355B9</generatorID>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF8E1805-42E4-2482-464C-E1C13BCA1A8C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5DB05DB0-67FB-65CB-A53A-A390E02AEF34" name="VISITA_CLIENTE_VEICULO_FK">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 00:51:11 UTC</createdTime>
+<generatorID>44501243-629C-A9F3-72C1-E8D578A7E2FB</generatorID>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A5FE114-95B0-ACD0-7AB0-BA5620CC6C8F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

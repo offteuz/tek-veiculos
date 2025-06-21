@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="87E43ABB-041B-1DD4-2308-8582CEF5400F" name="USUARIO_VISITA_CLIENTE">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 15:00:53 UTC</createdTime>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="USUARIO_id_usuario" id="F3309115-3C89-7116-9723-21737D2409B9">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 15:00:53 UTC</createdTime>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2060DA78-0937-DC6E-9A61-50DD1AADA121" referredColumn="69606A43-ED0A-91B5-A84B-4B2EAD3476B1"/>
+</associations>
+</Column>
+<Column name="VISITA_CLIENTE_id_visita_cliente" id="AC1FC1EB-2E53-7E27-134F-B724F7E7D409">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 15:00:53 UTC</createdTime>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E87AFBDD-F023-E9DC-8FCA-F8406A22CF08" referredColumn="A50A8EA6-ABF5-2F8C-C473-3FE8077F8758"/>
+</associations>
+</Column>
+<Column name="funcao" id="C3C0EAA0-144B-CAF5-568C-B1ACE67D0BFF">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 21:23:13 UTC</createdTime>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="69B2E830-9750-2672-0C2C-B32518245696" name="USUARIO_VISITA_CLIENTE_PK">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 15:00:53 UTC</createdTime>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F3309115-3C89-7116-9723-21737D2409B9"/>
+<colUsage columnID="AC1FC1EB-2E53-7E27-134F-B724F7E7D409"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1C1AD22B-9E37-4B39-9136-814E0BDBDD7F" name="USUARIO_VISITA_CLIENTE_USUARIO_FK">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 15:00:53 UTC</createdTime>
+<generatorID>A22AC8B1-9344-8D35-16FC-B408B4945345</generatorID>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F3309115-3C89-7116-9723-21737D2409B9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CC9EE4E5-7278-A9F6-75C9-FD2BDC8A0F29" name="USUARIO_VISITA_CLIENTE_VISITA_CLIENTE_FK">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 15:00:53 UTC</createdTime>
+<generatorID>A22AC8B1-9344-8D35-16FC-B408B4945345</generatorID>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AC1FC1EB-2E53-7E27-134F-B724F7E7D409"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

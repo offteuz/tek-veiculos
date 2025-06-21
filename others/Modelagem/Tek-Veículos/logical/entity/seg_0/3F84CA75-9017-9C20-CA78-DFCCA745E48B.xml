@@ -1,0 +1,180 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3F84CA75-9017-9C20-CA78-DFCCA745E48B" name="VISITA_CLIENTE">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-08 22:59:27 UTC</createdTime>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<engineerTo>
+<item key="32586709-FC96-4896-D5A1-1EA5A4F11FBF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_visita_cliente" id="72476860-5751-CFBF-66ED-76F30CF1B56D">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-08 23:06:51 UTC</createdTime>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<engineerTo>
+<item key="32586709-FC96-4896-D5A1-1EA5A4F11FBF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_hora_previsao_saida" id="CBA49923-2C2E-6DEC-A833-57EABF2E3BE7">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-09 15:10:22 UTC</createdTime>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<engineerTo>
+<item key="32586709-FC96-4896-D5A1-1EA5A4F11FBF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>91229484-D19C-D458-8647-333C7FFE7B60</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_hora_saida" id="200DB068-9AA4-667B-A6FA-F716A1C3AA71">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 00:47:35 UTC</createdTime>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<engineerTo>
+<item key="32586709-FC96-4896-D5A1-1EA5A4F11FBF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>91229484-D19C-D458-8647-333C7FFE7B60</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="km_saida_veiculo" id="03DDEB8E-7A3B-A403-CC73-FE71F55E5EB9">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 00:47:35 UTC</createdTime>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<engineerTo>
+<item key="32586709-FC96-4896-D5A1-1EA5A4F11FBF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_hora_previsao_retorno" id="AC2DE795-8D5E-90F7-7819-EEBB07F9CF90">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-08 23:07:03 UTC</createdTime>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<engineerTo>
+<item key="32586709-FC96-4896-D5A1-1EA5A4F11FBF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>91229484-D19C-D458-8647-333C7FFE7B60</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_hora_retorno" id="391C6EFC-6DEA-820E-FB66-75E793FC8B52">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 00:47:35 UTC</createdTime>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<engineerTo>
+<item key="32586709-FC96-4896-D5A1-1EA5A4F11FBF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>91229484-D19C-D458-8647-333C7FFE7B60</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="km_retorno_veiculo" id="50AC2F4E-C6E2-0A17-6EA9-C4BE81797AA3">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 00:47:35 UTC</createdTime>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<engineerTo>
+<item key="32586709-FC96-4896-D5A1-1EA5A4F11FBF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="observacao" id="E049FD42-65F2-A02F-54EC-2879CAF5FC26">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-08 23:07:13 UTC</createdTime>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<engineerTo>
+<item key="32586709-FC96-4896-D5A1-1EA5A4F11FBF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_veiculo" id="BDAB7F8A-8475-094F-E1D2-3D544FE53A62">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-08 23:04:21 UTC</createdTime>
+<generatorID>44501243-629C-A9F3-72C1-E8D578A7E2FB</generatorID>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<engineerTo>
+<item key="32586709-FC96-4896-D5A1-1EA5A4F11FBF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>9B03935F-B589-B5D5-B66C-F0468EA913ED</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_cliente" id="A704B473-299F-5E08-7051-A54DC3865BEA">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-08 23:05:20 UTC</createdTime>
+<generatorID>2A227158-C778-E49F-A3CA-0BE6E35BBE75</generatorID>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<engineerTo>
+<item key="32586709-FC96-4896-D5A1-1EA5A4F11FBF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>310A87C0-0CEA-A852-CE82-6DAB575CC0E4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_status" id="09FA8F4C-90F0-1AED-6683-654525BF9451">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-09 14:35:25 UTC</createdTime>
+<generatorID>4C477329-C435-D93E-A2C6-756957E355B9</generatorID>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<engineerTo>
+<item key="32586709-FC96-4896-D5A1-1EA5A4F11FBF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>8AB69008-C6F7-4619-A2C1-3AEA0EBAD778</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="14C614D4-4568-FBAF-42B1-5F7693B28FEE" name="VISITA CLIENTE PK">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-08 23:05:00 UTC</createdTime>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="32586709-FC96-4896-D5A1-1EA5A4F11FBF" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>72476860-5751-CFBF-66ED-76F30CF1B56D</newElementsIDs>
+<usedAttributes>
+<attributeRef>72476860-5751-CFBF-66ED-76F30CF1B56D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

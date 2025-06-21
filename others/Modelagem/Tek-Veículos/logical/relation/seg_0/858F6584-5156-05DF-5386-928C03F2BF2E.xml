@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="VISITA_CLIENTE_ABASTECIMENTO" directorySegmentName="seg_0" id="858F6584-5156-05DF-5386-928C03F2BF2E">
+<createdBy>Matheus</createdBy>
+<createdTime>2025-04-10 00:49:16 UTC</createdTime>
+<ownerDesignName>Tek-Veículos</ownerDesignName>
+<engineerTo>
+<item key="32586709-FC96-4896-D5A1-1EA5A4F11FBF" value="true"/>
+</engineerTo>
+<sourcePk>14C614D4-4568-FBAF-42B1-5F7693B28FEE</sourcePk>
+<targetPk>32C4FCEB-B294-5991-88DA-451E8FB48421</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>3F84CA75-9017-9C20-CA78-DFCCA745E48B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>51120126-7904-5B33-C2C1-12BD8FC3E109</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
