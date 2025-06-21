@@ -14,8 +14,8 @@ public class StatusMapperHelper {
         this.statusRepository = statusRepository;
     }
 
-    public Status map(Long statusId) {
-        return statusRepository.findById(statusId)
+    public Status map(Long idStatus) {
+        return statusRepository.findById(idStatus)
                 .orElseThrow(() -> new StatusNotFoundException());
     }
 }
