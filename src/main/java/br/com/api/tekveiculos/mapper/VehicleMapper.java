@@ -14,6 +14,7 @@ import org.mapstruct.ReportingPolicy;
 public interface VehicleMapper {
 
     @Mapping(target = "id", ignore = true)
+    @Mapping(target = "visitClientLists", ignore = true)
     @Mapping(target = "audit", ignore = true)
     @Mapping(source = "statusId", target = "status")
     Vehicle toDTO(VehicleRequestDTO dto);
@@ -21,6 +22,7 @@ public interface VehicleMapper {
     VehicleResponseDTO toModel(Vehicle vehicle);
 
     @Mapping(target = "id", ignore = true)
+    @Mapping(target = "visitClientLists", ignore = true)
     @Mapping(target = "audit", ignore = true)
     @Mapping(source = "statusId", target = "status")
     void update(VehicleRequestDTO dto, @MappingTarget Vehicle vehicle);

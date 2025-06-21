@@ -13,16 +13,20 @@ import org.mapstruct.ReportingPolicy;
 public interface StatusMapper {
 
     @Mapping(target = "id", ignore = true)
-    @Mapping(target = "audit", ignore = true)
     @Mapping(target = "clientList", ignore = true)
     @Mapping(target = "vehicleList", ignore = true)
+    @Mapping(target = "memberList", ignore = true)
+    @Mapping(target = "visitClientLists", ignore = true)
+    @Mapping(target = "audit", ignore = true)
     Status toDTO(StatusRequestDTO dto);
 
     StatusResponseDTO toModel(Status status);
 
     @Mapping(target = "id", ignore = true)
-    @Mapping(target = "audit", ignore = true)
     @Mapping(target = "clientList", ignore = true)
     @Mapping(target = "vehicleList", ignore = true)
+    @Mapping(target = "memberList", ignore = true)
+    @Mapping(target = "visitClientLists", ignore = true)
+    @Mapping(target = "audit", ignore = true)
     void update(StatusRequestDTO dto, @MappingTarget Status status);
 }

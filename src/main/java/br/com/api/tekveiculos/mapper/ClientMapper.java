@@ -14,14 +14,16 @@ import org.mapstruct.ReportingPolicy;
 public interface ClientMapper {
 
     @Mapping(target = "id", ignore = true)
+    @Mapping(target = "visitClientLists", ignore = true)
     @Mapping(target = "audit", ignore = true)
-    @Mapping(source = "statusId", target = "status")
+    @Mapping(source = "idStatus", target = "status")
     Client toDTO(ClientRequestDTO dto);
 
     ClientResponseDTO toModel(Client client);
 
     @Mapping(target = "id", ignore = true)
+    @Mapping(target = "visitClientLists", ignore = true)
     @Mapping(target = "audit", ignore = true)
-    @Mapping(source = "statusId", target = "status")
+    @Mapping(source = "idStatus", target = "status")
     void update(ClientRequestDTO dto, @MappingTarget Client client);
 }
