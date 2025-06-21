@@ -1,9 +1,12 @@
 package br.com.api.tekveiculos.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import jakarta.validation.Valid;
 import lombok.*;
+
+import java.util.List;
 
 @Getter
 @Setter
@@ -32,10 +35,16 @@ public class Client {
 
     private String uf;
 
-    @ManyToOne
-    @JoinColumn(name = "status_id", referencedColumnName = "id")
     @JsonIgnore
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "status_id", referencedColumnName = "id", foreignKey = @ForeignKey(name = "f_client_status"))
     private Status status;
+
+    @JsonIgnore
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+    @OneToMany(mappedBy = "client", fetch = FetchType.LAZY)
+    private List<VisitClient> visitClientLists;
 
     @Embedded
     @Valid
